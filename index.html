@@ -14,14 +14,14 @@
   <body>
     <!-- Header -->
     <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+      class="bg-transparent absolute top-0 left-0 h-16 w-full flex items-center z-10 lg:h-24"
     >
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4" id="brand">
             <a
               href="#home"
-              class="font-bold text-5xl block py-6 px-1 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary"
+              class="font-bold text-4xl block py-6 px-1 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary lg:text-5xl"
             >
               madep
             </a>
@@ -91,18 +91,18 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 mb-5 lg:w-1/2 home">
-            <h1 class="text-base font-semibold text-dark md:text-xl">
+            <h1 class="text-sm font-semibold text-dark md:text-xl">
               Hallo semua 👋, saya
               <span
-                class="block font-bold text-dark text-3xl mt-1 lg:text-5xl nama"
+                class="block font-bold text-dark text-2xl mt-1 lg:text-5xl nama"
               >
               </span>
             </h1>
             <h2
-              class="font-semibold text-xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary mb-5 max-w-xs lg:text-2xl nama2"
+              class="font-semibold text-lg text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary mb-5 max-w-xs lg:text-2xl nama2"
             ></h2>
             <p
-              class="font-medium text-base text-secondary mb-10 lg:text-lg leading-relaxed"
+              class="font-medium text-sm text-secondary mb-10 lg:text-lg leading-relaxed"
             >
               Selamat datang di website saya. Saya mengundang anda untuk
               menjelajahi website saya agar mengenal lebih jauh mengenai diri
@@ -111,14 +111,14 @@
             <div class="mt-5">
               <a
                 href="#contact"
-                class="text-base font-semibold text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
+                class="text-sm font-semibold text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
               >
                 Hubungi Saya
               </a>
               <a
                 href="https://drive.google.com/file/d/19SvsF61wDppIhAEiCBqOmCn6mJwkTAeo/view"
                 target="_blank"
-                class="text-base font-semibold text-secondary border-[1px] border-secondary ml-3 px-6 py-3 rounded-md hover:bg-gradient-to-r hover:from-slate-300 hover:to-slate-400 hover:text-dark hover:border-none hover:shadow-xl"
+                class="text-sm font-semibold text-secondary border-[1px] border-secondary ml-3 px-6 py-3 rounded-md hover:bg-gradient-to-r hover:from-slate-300 hover:to-slate-400 hover:text-dark hover:border-none hover:shadow-xl"
               >
                 Unduh CV
               </a>
@@ -132,7 +132,7 @@
                 class="max-w-full mx-auto image"
               />
               <span
-                class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 svg-image"
+                class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2 svg-image"
               >
                 <svg
                   width="400"
@@ -159,16 +159,18 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2 about">
-            <h4 class="font-bold text-lg text-primary mb-3">Tentang Saya</h4>
-            <h2 class="font-semibold text-xl text-dark max-w-full lg:text-2xl">
+            <h4 class="font-bold text-xs text-primary mb-3 lg:text-lg">
+              Tentang Saya
+            </h4>
+            <h2 class="font-semibold text-lg text-dark max-w-full lg:text-2xl">
               Nama Saya
             </h2>
-            <h2 class="font-bold text-3xl text-dark max-w-full lg:text-4xl">
+            <h2 class="font-bold text-2xl text-dark max-w-full lg:text-4xl">
               Mahfud Ade Purwanto,
             </h2>
 
             <h2
-              class="font-semibold text-xl text-dark mb-5 max-w-full lg:text-2xl"
+              class="font-semibold text-lg text-dark mb-5 max-w-full lg:text-2xl"
             >
               seorang
               <span
@@ -178,7 +180,7 @@
               </span>
             </h2>
             <p
-              class="font-medium text-base text-secondary mb-5 max-w-xl lg:text-lg"
+              class="font-medium text-sm text-secondary mb-5 max-w-xl lg:text-lg"
             >
               Saya lulusan dari Universitas Islam Sultan Agung Semarang jurusan
               Teknik Informatika. Saya menguasai pemrograman berbasis web
@@ -186,9 +188,14 @@
               Mahir dalam instalasi software dan sistem operasi komputer. Mampu
               bekerja secara mandiri maupun tim.
             </p>
-            <h3 class="font-semibold text-xl text-dark mb-3 lg:text-2xl">
+            <h3 class="font-semibold text-lg text-dark lg:text-2xl">
               Mari Terhubung
             </h3>
+            <p
+              class="font-medium text-sm text-secondary mb-3 max-w-xl lg:text-lg"
+            >
+              Mari saling berbagi informasi bersama.
+            </p>
             <div class="flex items-center">
               <!-- Whatsapp -->
               <a
@@ -292,13 +299,22 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 lg:pt-8">
-            <h2 class="font-bold text-xl text-dark mb-5 pt-3 lg:text-2xl">
+            <h2 class="font-bold text-lg text-dark pt-3 lg:text-2xl">
               Keahlian Saya
             </h2>
+            <p
+              class="font-medium text-sm text-secondary mb-5 max-w-xl lg:text-lg"
+            >
+              Tetap belajar hal baru untuk terus bersaing.
+            </p>
             <div class="mb-7">
               <div class="flex justify-between mb-1">
-                <span class="text-xl font-medium text-dark">HTML & CSS</span>
-                <span class="text-xl font-medium text-primary">90%</span>
+                <span class="text-lg font-medium text-dark lg:text-xl"
+                  >HTML & CSS</span
+                >
+                <span class="text-lg font-medium text-primary lg:text-xl"
+                  >90%</span
+                >
               </div>
               <div class="w-full bg-slate-300 rounded-full h-3">
                 <div
@@ -309,8 +325,12 @@
             </div>
             <div class="mb-7">
               <div class="flex justify-between mb-1">
-                <span class="text-xl font-medium text-dark">JAVASCRIPT</span>
-                <span class="text-xl font-medium text-primary">65%</span>
+                <span class="text-lg font-medium text-dark lg:text-xl"
+                  >JAVASCRIPT</span
+                >
+                <span class="text-lg font-medium text-primary lg:text-xl"
+                  >65%</span
+                >
               </div>
               <div class="w-full bg-slate-300 rounded-full h-3">
                 <div
@@ -321,8 +341,12 @@
             </div>
             <div class="mb-7">
               <div class="flex justify-between mb-1">
-                <span class="text-xl font-medium text-dark">PHP</span>
-                <span class="text-xl font-medium text-primary">75%</span>
+                <span class="text-lg font-medium text-dark lg:text-xl"
+                  >PHP</span
+                >
+                <span class="text-lg font-medium text-primary lg:text-xl"
+                  >75%</span
+                >
               </div>
               <div class="w-full bg-slate-300 rounded-full h-3">
                 <div
@@ -333,8 +357,12 @@
             </div>
             <div class="mb-7">
               <div class="flex justify-between mb-1">
-                <span class="text-xl font-medium text-dark">MySQL</span>
-                <span class="text-xl font-medium text-primary">70%</span>
+                <span class="text-lg font-medium text-dark lg:text-xl"
+                  >MySQL</span
+                >
+                <span class="text-lg font-medium text-primary lg:text-xl"
+                  >70%</span
+                >
               </div>
               <div class="w-full bg-slate-300 rounded-full h-3">
                 <div
@@ -354,11 +382,13 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16 portfolio">
-            <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 lg:text-4xl">
+            <h4 class="font-semibold text-xs text-primary mb-2 lg:text-lg">
+              Portfolio
+            </h4>
+            <h2 class="font-bold text-dark text-2xl mb-2 lg:text-4xl lg:mb-4">
               Project Terbaru
             </h2>
-            <p class="font-medium text-md text-secondary">
+            <p class="font-medium text-sm text-secondary lg:text-lg">
               Beberapa project yang sudah saya buat untuk client.
             </p>
           </div>
@@ -370,17 +400,17 @@
             <div class="rounded-md shadow-md overflow-hidden gsc">
               <img src="dist/img/portfolio/gsc.jpg" alt="GSC" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
               Company Profile PT Gosyen Solusindo Cemerlang
             </h3>
-            <p class="font-medium text-base text-secondary mb-5">
+            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
               Website Company Profile PT Gosyen Solusindo Cemerlang yang dibuat
               dengan HTML, Bootstrap 5 dan Javascript.
             </p>
             <a
               href="https://gosyensc.netlify.app/"
               target="_blank"
-              class="text-base font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
+              class="text-sm font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base"
             >
               Kunjungi Website
             </a>
@@ -389,17 +419,17 @@
             <div class="rounded-md shadow-md overflow-hidden mkm">
               <img src="dist/img/portfolio/mkm.jpg" alt="MKM" width="w-full" />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
               Landing Page SMK Mitra Karya Mandiri Ketanggungan
             </h3>
-            <p class="font-medium text-base text-secondary mb-5">
+            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
               Website Landing Page SMK Mitra Karya Mandiri Ketanggungan yang
               dibuat denagn HTML 5 dan Material Design Bootstrap
             </p>
             <a
               href="https://smkmkm.netlify.app/"
               target="_blank"
-              class="text-base font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
+              class="text-sm font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base"
             >
               Kunjungi Website
             </a>
@@ -412,17 +442,17 @@
                 width="w-full"
               />
             </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
               Ganool Movies - Tempat Nonton Film Terbaru
             </h3>
-            <p class="font-medium text-base text-secondary mb-5">
+            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
               Website untuk menonton film terbaru. Dibuat dengan ReactJS dan
               Bootstrap.
             </p>
             <a
               href="https://ganoolmovies.netlify.app/"
               target="_blank"
-              class="text-base font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
+              class="text-sm font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base"
             >
               Kunjungi Website
             </a>
@@ -438,13 +468,15 @@
         <div class="container">
           <div class="w-full px-4">
             <div class="w-full mx-auto text-center mb-16 kontak">
-              <h4 class="font-semibold text-lg text-primary mb-2">Kontak</h4>
+              <h4 class="font-semibold text-xs text-primary mb-2 lg:text-lg">
+                Kontak
+              </h4>
               <h2
-                class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-4xl"
+                class="font-bold text-dark text-2xl mb-2 sm:text-4xl lg:text-4xl lg:mb-4"
               >
                 Hubungi Saya
               </h2>
-              <p class="font-medium text-md text-secondary md:text-lg">
+              <p class="font-medium text-sm text-secondary md:text-lg">
                 Mari bekerja sama. Saya terbuka untuk bekerja sama dengan Anda.
               </p>
             </div>
@@ -452,7 +484,10 @@
           <form name="madep-contact-form">
             <div class="w-full lg:w-2/3 lg:mx-auto">
               <div class="w-full px-4 mb-8 kontak1">
-                <label for="name" class="font-bold text-base text-primary">
+                <label
+                  for="name"
+                  class="font-bold text-sm text-primary lg:text-base"
+                >
                   Nama
                 </label>
                 <input
@@ -463,7 +498,9 @@
                 />
               </div>
               <div class="w-full px-4 mb-8 kontak2">
-                <label for="email" class="font-bold text-base text-primary"
+                <label
+                  for="email"
+                  class="font-bold text-sm text-primary lg:text-base"
                   >Email</label
                 >
                 <input
@@ -474,7 +511,9 @@
                 />
               </div>
               <div class="w-full px-4 mb-8 kontak3">
-                <label for="message" class="font-bold text-base text-primary"
+                <label
+                  for="message"
+                  class="font-bold text-sm text-primary lg:text-base"
                   >Pesan</label
                 >
                 <textarea
@@ -487,7 +526,7 @@
               <div class="w-full px-4 mb-4 kontak4">
                 <button
                   type="submit"
-                  class="w-full text-base font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-kirim"
+                  class="w-full text-sm font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-kirim lg:text-base"
                 >
                   Kirim
                 </button>
@@ -495,7 +534,7 @@
               <div class="w-full px-4 mb-4 kontak4">
                 <button
                   type="submit"
-                  class="w-full text-base font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-loading hidden"
+                  class="w-full text-sm font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-loading hidden lg:text-base"
                 >
                   <svg
                     role="status"
@@ -533,11 +572,11 @@
               <a
                 href="https://wa.me/6281333348747"
                 target="_blank"
-                class="w-[50px] h-[50px] mx-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
+                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
               >
                 <svg
                   role="img"
-                  width="30"
+                  width="20"
                   viewBox="0 0 24 24"
                   class="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -553,11 +592,11 @@
               <a
                 href="https://web.facebook.com/madep.dev"
                 target="_blank"
-                class="w-[50px] h-[50px] mx-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
+                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
               >
                 <svg
                   role="img"
-                  width="30"
+                  width="20"
                   class="fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -573,11 +612,11 @@
               <a
                 href="https://www.instagram.com/adde.nvr/"
                 target="_blank"
-                class="w-[50px] h-[50px] mx-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:scale-[1.2] hover:shadow-xl transition duration-300"
+                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
               >
                 <svg
                   role="img"
-                  width="30"
+                  width="20"
                   class="fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -593,11 +632,11 @@
               <a
                 href="https://www.linkedin.com/in/mahfud-ade-purwanto-7609a7191/"
                 target="_blank"
-                class="w-[50px] h-[50px] mx-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
+                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
               >
                 <svg
                   role="img"
-                  width="30"
+                  width="20"
                   class="fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -613,11 +652,11 @@
               <a
                 href="https://github.com/madep-dev"
                 target="_blank"
-                class="w-[50px] h-[50px] mx-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-white hover:text-[#181717] hover:scale-[1.2] hover:shadow-xl transition duration-300"
+                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-white hover:text-[#181717] hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
               >
                 <svg
                   role="img"
-                  width="30"
+                  width="20"
                   class="fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -632,23 +671,33 @@
           </div>
           <div class="flex w-full px-4 mb-6 md:w-1/2 md:items-center">
             <ul class="w-full inline-flex justify-center md:justify-end">
-              <li class="text-base text-slate-300 px-2 mx-2 hover:text-primary">
+              <li
+                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+              >
                 <a href="#home"> Beranda </a>
               </li>
-              <li class="text-base text-slate-300 px-2 mx-2 hover:text-primary">
+              <li
+                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+              >
                 <a href="#about">Tentang Saya</a>
               </li>
-              <li class="text-base text-slate-300 px-2 mx-2 hover:text-primary">
+              <li
+                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+              >
                 <a href="#portfolio">Portfolio</a>
               </li>
-              <li class="text-base text-slate-300 px-2 mx-2 hover:text-primary">
+              <li
+                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+              >
                 <a href="#contact">Kontak</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="w-full pt-8 border-t border-slate-700">
-          <p class="font-medium text-sm text-slate-500 text-center">
+          <p
+            class="font-medium text-[0.6rem] text-slate-500 text-center lg:text-sm"
+          >
             Dibuat dengan <span class="text-pink-500"> ❤️ </span>oleh
             <a
               href="https://github.com/madep-dev"
@@ -695,9 +744,9 @@
           .then((response) => {
             btnLoading.classList.toggle("hidden");
             btnKirim.classList.toggle("hidden");
-            alert(
-              "Terima kasih sudah mengirim pesan. Pesan Anda sudah diterima."
-            );
+            // alert(
+            //   "Terima kasih sudah mengirim pesan. Pesan Anda sudah diterima."
+            // );
             form.reset();
             console.log("Success!", response);
           })
