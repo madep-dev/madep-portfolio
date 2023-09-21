@@ -1,931 +1,1056 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selamat Datang di Website Saya</title>
-    <link href="dist/output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="bg-transparent absolute top-0 left-0 h-16 w-full flex items-center z-10 lg:h-24">
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4" id="brand">
-            <a
-              href="#home"
-              class="font-bold text-4xl block py-6 px-1 text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary lg:text-5xl"
-            >
-              madep
-            </a>
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="block absolute right-4 lg:hidden"
-            >
-              <span class="hamburger-line transition duration-500 origin-top-left"></span>
-              <span class="hamburger-line transition duration-500"></span>
-              <span class="hamburger-line transition duration-500 origin-bottom-left"></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white bg-opacity-95 shadow-xl rounded-lg max-w-[350px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:font-semibold"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Beranda
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Tentang Saya
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#portfolio"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
-                  >
-                    Portfolio
-                  </a>
-                </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-dark py-2 ml-8 mr-2 flex group-hover:text-primary"
-                  >
-                    Kontak
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end Header -->
-
-    <!-- Hero -->
-    <section id="home" class="pt-36">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 mb-5 lg:w-1/2 home">
-            <h1 class="text-sm font-semibold text-dark md:text-xl">
-              Hallo, nama saya
-              <span class="block font-bold text-dark text-2xl mt-1 lg:text-5xl nama"> </span>
-            </h1>
-            <h2
-              class="font-semibold text-lg text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary mb-5 max-w-xs lg:text-2xl nama2"
-            ></h2>
-            <p class="font-medium text-sm text-secondary mb-10 lg:text-lg leading-relaxed">
-              Selamat datang di website saya. Saya mengundang anda untuk menjelajahi website saya
-              agar mengenal lebih jauh mengenai diri saya.
-            </p>
-            <div class="mt-5">
-              <a
-                href="#contact"
-                class="text-sm font-semibold text-white bg-gradient-to-r from-sky-400 to-primary px-6 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl"
-              >
-                Hubungi Saya
-              </a>
-              <a
-                href="https://drive.google.com/file/d/19SvsF61wDppIhAEiCBqOmCn6mJwkTAeo/view"
-                target="_blank"
-                class="text-sm font-semibold text-secondary border-[1px] border-secondary ml-3 px-6 py-3 rounded-md hover:bg-gradient-to-r hover:from-slate-300 hover:to-slate-400 hover:text-dark hover:border-none hover:shadow-xl"
-              >
-                Unduh CV
-              </a>
-            </div>
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img src="dist/img/adde-min.png" alt="Adde" class="max-w-full mx-auto image" />
-              <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2 svg-image">
-                <svg
-                  width="400"
-                  height="400"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#2563eb"
-                    d="M49.8,-54.4C60.3,-39.3,61.7,-19.7,58.2,-3.6C54.6,12.5,46.1,25,35.5,36.2C25,47.4,12.5,57.2,-2.2,59.5C-17,61.7,-34,56.3,-50.1,45.2C-66.3,34,-81.5,17,-79.1,2.5C-76.6,-12.1,-56.4,-24.2,-40.3,-39.2C-24.2,-54.3,-12.1,-72.4,3.8,-76.1C19.7,-79.9,39.3,-69.4,49.8,-54.4Z"
-                    transform="translate(100 100) scale(1.2)"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end Hero -->
-
-    <!-- About -->
-    <section id="about" class="pt-36 pb-32">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <div class="about">
-              <h4 class="font-bold text-xs text-primary mb-3 lg:text-lg">Tentang Saya</h4>
-              <h2 class="font-semibold text-lg text-dark max-w-full lg:text-2xl">Nama Saya</h2>
-              <h2 class="font-bold text-2xl text-dark max-w-full lg:text-4xl">
-                Mahfud Ade Purwanto,
-              </h2>
-
-              <h2 class="font-semibold text-lg text-dark mb-5 max-w-full lg:text-2xl">
-                seorang
-                <span
-                  class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary"
-                >
-                  Web Programmer
-                </span>
-              </h2>
-              <p class="font-medium text-sm text-secondary mb-5 max-w-xl lg:text-lg">
-                Saya lulusan dari Universitas Islam Sultan Agung Semarang jurusan Teknik
-                Informatika. Saya menguasai pemrograman berbasis web seperti HTML, CSS dan PHP.
-                Familiar dengan dan database MySQL. Mahir dalam instalasi software dan sistem
-                operasi komputer. Mampu bekerja secara mandiri maupun tim.
-              </p>
-            </div>
-            <h3 class="font-semibold text-lg text-dark lg:text-2xl">Mari Terhubung</h3>
-            <p class="font-medium text-sm text-secondary mb-3 max-w-xl lg:text-lg">
-              Mari saling tukar informasi bersama.
-            </p>
-            <div class="flex items-center">
-              <!-- Whatsapp -->
-              <div class="wa">
-                <a
-                  href="https://wa.me/6281333348747"
-                  target="_blank"
-                  class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
-                >
-                  <svg
-                    role="img"
-                    width="30"
-                    viewBox="0 0 24 24"
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>WhatsApp</title>
-                    <path
-                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Facebook -->
-              <div class="fb">
-                <a
-                  href="https://web.facebook.com/madep.dev"
-                  target="_blank"
-                  class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
-                >
-                  <svg
-                    role="img"
-                    width="30"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Facebook</title>
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Instagram -->
-              <div class="ig">
-                <a
-                  href="https://www.instagram.com/adde.nvr/"
-                  target="_blank"
-                  class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:scale-[1.2] hover:shadow-xl transition duration-300"
-                >
-                  <svg
-                    role="img"
-                    width="30"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Instagram</title>
-                    <path
-                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Linkedin -->
-              <div class="link">
-                <a
-                  href="https://www.linkedin.com/in/mahfud-ade-purwanto-7609a7191/"
-                  target="_blank"
-                  class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
-                >
-                  <svg
-                    role="img"
-                    width="30"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>LinkedIn</title>
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                    />
-                  </svg>
-                </a>
-              </div>
-
-              <!-- Github -->
-              <div class="git">
-                <a
-                  href="https://github.com/madep-dev"
-                  target="_blank"
-                  class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#181717] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300"
-                >
-                  <svg
-                    role="img"
-                    width="30"
-                    class="fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>GitHub</title>
-                    <path
-                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 lg:pt-8">
-            <h2 class="font-bold text-lg text-dark pt-3 lg:text-2xl">Keahlian Saya</h2>
-            <p class="font-medium text-sm text-secondary mb-5 max-w-xl lg:text-lg">
-              Tetap belajar hal baru untuk terus bersaing.
-            </p>
-            <div class="mb-7">
-              <div class="flex justify-between mb-1">
-                <span class="text-lg font-medium text-dark lg:text-xl">HTML & CSS</span>
-                <span class="text-lg font-medium text-primary lg:text-xl">90%</span>
-              </div>
-              <div class="w-full bg-slate-300 rounded-full h-3">
-                <div
-                  class="bg-gradient-to-r from-sky-400 to-blue-600 h-3 rounded-full progress"
-                  style="width: 90%"
-                ></div>
-              </div>
-            </div>
-            <div class="mb-7">
-              <div class="flex justify-between mb-1">
-                <span class="text-lg font-medium text-dark lg:text-xl">JAVASCRIPT</span>
-                <span class="text-lg font-medium text-primary lg:text-xl">70%</span>
-              </div>
-              <div class="w-full bg-slate-300 rounded-full h-3">
-                <div
-                  class="bg-gradient-to-r from-sky-400 to-blue-600 h-3 rounded-full progress1"
-                  style="width: 70%"
-                ></div>
-              </div>
-            </div>
-            <div class="mb-7">
-              <div class="flex justify-between mb-1">
-                <span class="text-lg font-medium text-dark lg:text-xl">PHP</span>
-                <span class="text-lg font-medium text-primary lg:text-xl">75%</span>
-              </div>
-              <div class="w-full bg-slate-300 rounded-full h-3">
-                <div
-                  class="bg-gradient-to-r from-sky-400 to-blue-600 h-3 rounded-full progress2"
-                  style="width: 75%"
-                ></div>
-              </div>
-            </div>
-            <div class="mb-7">
-              <div class="flex justify-between mb-1">
-                <span class="text-lg font-medium text-dark lg:text-xl">MySQL</span>
-                <span class="text-lg font-medium text-primary lg:text-xl">70%</span>
-              </div>
-              <div class="w-full bg-slate-300 rounded-full h-3">
-                <div
-                  class="bg-gradient-to-r from-sky-400 to-blue-600 h-3 rounded-full progress3"
-                  style="width: 70%"
-                ></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end About -->
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16 portfolio">
-            <h4 class="font-semibold text-xs text-primary mb-2 lg:text-lg">Portfolio</h4>
-            <h2 class="font-bold text-dark text-2xl mb-2 lg:text-4xl lg:mb-4">Project Terbaru</h2>
-            <p class="font-medium text-sm text-secondary lg:text-lg">
-              Beberapa project yang sudah saya buat untuk client.
-            </p>
-          </div>
-        </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2 portfolio1">
-            <div class="rounded-md shadow-md overflow-hidden asmaralaya">
-              <img src="dist/img/portfolio/asmaralaya.avif" alt="Asmaralaya" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
-              Kedai Kopi Asmaralaya
-            </h3>
-            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
-              Website Kedai Kopi Asmaralaya yang dibuat dengan TailwindCSS dan Javascript.
-            </p>
-            <a
-              href="https://madep-dev.github.io/asmaralaya/"
-              target="_blank"
-              class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
-            >
-              Kunjungi Website
-            </a>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 portfolio2">
-            <div class="rounded-md shadow-md overflow-hidden gsc">
-              <img src="dist/img/portfolio/gsc.avif" alt="GSC" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
-              Company Profile PT Gosyen Solusindo Cemerlang
-            </h3>
-            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
-              Website Company Profile PT Gosyen Solusindo Cemerlang yang dibuat dengan HTML,
-              Bootstrap 5 dan Javascript.
-            </p>
-            <a
-              href="https://gosyensc.netlify.app/"
-              target="_blank"
-              class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
-            >
-              Kunjungi Website
-            </a>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 portfolio3">
-            <div class="rounded-md shadow-md overflow-hidden mkm">
-              <img src="dist/img/portfolio/mkm.avif" alt="MKM" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
-              Landing Page SMK Mitra Karya Mandiri Ketanggungan
-            </h3>
-            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
-              Website Landing Page SMK Mitra Karya Mandiri Ketanggungan yang dibuat denagn HTML 5
-              dan Material Design Bootstrap
-            </p>
-            <a
-              href="https://madep-dev.github.io/smkmkm/"
-              target="_blank"
-              class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
-            >
-              Kunjungi Website
-            </a>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 portfolio4">
-            <div class="rounded-md shadow-md overflow-hidden ganool">
-              <img src="dist/img/portfolio/ganool.avif" alt="Ganool Movies" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
-              Ganool Movies - Tempat Nonton Film Terbaru
-            </h3>
-            <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
-              Website untuk menonton film terbaru. Dibuat dengan ReactJS dan Bootstrap.
-            </p>
-            <a
-              href="https://ganoolmovies.netlify.app/"
-              target="_blank"
-              class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
-            >
-              Kunjungi Website
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end Portfolio -->
-
-    <!-- Concact -->
-    <section id="contact">
-      <div class="pt-36 pb-32">
-        <div class="container">
-          <div class="w-full px-4">
-            <div class="w-full mx-auto text-center mb-16 kontak">
-              <h4 class="font-semibold text-xs text-primary mb-2 lg:text-lg">Kontak</h4>
-              <h2 class="font-bold text-dark text-2xl mb-2 sm:text-4xl lg:text-4xl lg:mb-4">
-                Hubungi Saya
-              </h2>
-              <p class="font-medium text-sm text-secondary md:text-lg">
-                Mari bekerja sama. Saya terbuka untuk bekerja sama dengan Anda.
-              </p>
-            </div>
-          </div>
-
-          <form name="madep-contact-form">
-            <div class="w-full lg:w-2/3 lg:mx-auto">
-              <div class="w-full px-4 mb-8">
-                <div
-                  class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500 my-alert hidden"
-                >
-                  <span class="inline-block align-middle mr-8 text-sm lg:text-lg">
-                    <b class="capitalize">Terima kasih.</b>
-                  </span>
-                  <p class="text-sm lg:text-lg">Pesan Anda sudah diterima.</p>
-                  <button
-                    class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
-                    onclick="closeAlert(event)"
-                  >
-                    <span>×</span>
-                  </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Selamat Datang</title>
+        <link href="dist/output.css" rel="stylesheet" />
+        <link href="dist/style.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header
+            class="bg-transparent absolute top-0 left-0 h-16 w-full flex items-center z-10 lg:h-24"
+        >
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="" id="brand">
+                        <a
+                            href="#home"
+                            class="font-bold text-4xl block py-6 px-1 text-transparent bg-clip-text bg-blue-500 transition-all duration-300 hover:bg-primary lg:text-5xl"
+                        >
+                            madep
+                        </a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button
+                            id="hamburger"
+                            name="hamburger"
+                            type="button"
+                            class="block absolute right-4 lg:hidden"
+                        >
+                            <span
+                                class="hamburger-line transition duration-500 origin-top-left"
+                            ></span>
+                            <span class="hamburger-line transition duration-500"></span>
+                            <span
+                                class="hamburger-line transition duration-500 origin-bottom-left"
+                            ></span>
+                        </button>
+                        <nav
+                            id="nav-menu"
+                            class="hidden absolute py-5 bg-white bg-opacity-95 shadow-xl rounded-lg max-w-[350px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:font-semibold"
+                        >
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a
+                                        href="#home"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                                    >
+                                        Beranda
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#about"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                                    >
+                                        Tentang Saya
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#portfolio"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                                    >
+                                        Project
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a
+                                        href="#contact"
+                                        class="text-base text-dark py-2 ml-8 mr-2 flex group-hover:text-primary"
+                                    >
+                                        Kontak
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <script>
-                  function closeAlert(event) {
-                    let element = event.target;
-                    while (element.nodeName !== "BUTTON") {
-                      element = element.parentNode;
-                    }
-                    element.parentNode.parentNode.removeChild(element.parentNode);
-                  }
-                </script>
-              </div>
-              <div class="w-full px-4 mb-8 kontak1">
-                <label for="name" class="font-bold text-sm text-primary lg:text-base"> Nama </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="nama"
-                  class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary"
-                />
-              </div>
-              <div class="w-full px-4 mb-8 kontak2">
-                <label for="email" class="font-bold text-sm text-primary lg:text-base">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary"
-                />
-              </div>
-              <div class="w-full px-4 mb-8 kontak3">
-                <label for="message" class="font-bold text-sm text-primary lg:text-base"
-                  >Pesan</label
-                >
-                <textarea
-                  type="text-area"
-                  id="email"
-                  name="pesan"
-                  class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary h-32"
-                ></textarea>
-              </div>
-              <div class="w-full px-4 mb-4 kontak4">
-                <button
-                  type="submit"
-                  class="w-full text-sm font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-kirim lg:text-base"
-                >
-                  Kirim
-                </button>
-              </div>
-              <div class="w-full px-4 mb-4 kontak4">
-                <button
-                  type="submit"
-                  class="w-full text-sm font-semibold text-white bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 py-3 px-8 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:via-blue-500 hover:to-blue-600 hover:shadow-xl btn-loading hidden lg:text-base"
-                >
-                  <svg
-                    role="status"
-                    class="inline mr-3 w-4 h-4 text-white animate-spin"
-                    viewBox="0 0 100 101"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-                      fill="#E5E7EB"
-                    />
-                    <path
-                      d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                  Mengirim ...
-                </button>
-              </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- end Contact -->
+        </header>
+        <!-- end Header -->
 
-    <!-- Footer -->
-    <section class="bg-dark pt-20 pb-12">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 md:mb-6 md:w-1/2">
-            <div class="flex justify-evenly md:justify-start">
-              <!-- Whatsapp -->
-              <a
-                href="https://wa.me/6281333348747"
-                target="_blank"
-                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
-              >
-                <svg
-                  role="img"
-                  width="20"
-                  viewBox="0 0 24 24"
-                  class="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>WhatsApp</title>
-                  <path
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                  />
-                </svg>
-              </a>
-
-              <!-- Facebook -->
-              <a
-                href="https://web.facebook.com/madep.dev"
-                target="_blank"
-                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
-              >
-                <svg
-                  role="img"
-                  width="20"
-                  class="fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Facebook</title>
-                  <path
-                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                  />
-                </svg>
-              </a>
-
-              <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/adde.nvr/"
-                target="_blank"
-                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
-              >
-                <svg
-                  role="img"
-                  width="20"
-                  class="fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Instagram</title>
-                  <path
-                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
-                  />
-                </svg>
-              </a>
-
-              <!-- Linkedin -->
-              <a
-                href="https://www.linkedin.com/in/mahfud-ade-purwanto-7609a7191/"
-                target="_blank"
-                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
-              >
-                <svg
-                  role="img"
-                  width="20"
-                  class="fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>LinkedIn</title>
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  />
-                </svg>
-              </a>
-
-              <!-- Github -->
-              <a
-                href="https://github.com/madep-dev"
-                target="_blank"
-                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-white hover:text-[#181717] hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
-              >
-                <svg
-                  role="img"
-                  width="20"
-                  class="fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>GitHub</title>
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  />
-                </svg>
-              </a>
+        <!-- Hero -->
+        <section id="home">
+            <div class="container">
+                <div class="flex flex-wrap h-screen items-center text-center">
+                    <div
+                        class="w-full bg-sky-200 bg-transparent bg-opacity-10 backdrop-filter backdrop-blur-sm px-4 py-14 lg:py-32 lg:px-32 rounded-xl md:rounded-3xl"
+                    >
+                        <h1
+                            class="font-semibold text-dark text-sm mb-1 lg:mb-5 sm:text-lg lg:text-3xl"
+                        >
+                            Halo, saya
+                        </h1>
+                        <p
+                            class="font-bold text-dark text-2xl sm:text-4xl mb-2 lg:text-6xl lg:mb-5"
+                        >
+                            Mahfud Ade Purwanto
+                        </p>
+                        <p
+                            class="font-medium text-sm text-secondary mb-10 lg:px-16 lg:text-lg leading-relaxed"
+                        >
+                            Selamat datang di website saya. Saya mengundang anda untuk menjelajahi
+                            website saya agar mengenal lebih jauh mengenai diri saya.
+                        </p>
+                        <a
+                            href="#portfolio"
+                            class="text-xs lg:text-sm font-medium lg:font-semibold text-white border border-blue-500 bg-blue-500 px-4 py-2 lg:px-6 lg:py-3 rounded-md transition-all duration-300 ease-in-out hover:bg-blue-700 hover:border hover:border-blue-700 hover:shadow-xl hover:shadow-blue-700/50"
+                        >
+                            Project
+                        </a>
+                        <a
+                            href="https://drive.google.com/file/d/19SvsF61wDppIhAEiCBqOmCn6mJwkTAeo/view"
+                            target="_blank"
+                            class="text-xs lg:text-sm font-medium lg:font-semibold text-secondary border border-secondary bg-white ml-3 px-4 py-2 lg:px-6 lg:py-3 mb-10 rounded-md transition-all duration-300 ease-in-out hover:bg-secondary hover:border hover:border-secondary hover:text-white hover:shadow-xl hover:shadow-secondary/50"
+                        >
+                            Unduh CV
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="flex w-full px-4 mb-6 md:w-1/2 md:items-center">
-            <ul class="w-full inline-flex justify-center md:justify-end">
-              <li
-                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
-              >
-                <a href="#home"> Beranda </a>
-              </li>
-              <li
-                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
-              >
-                <a href="#about">Tentang Saya</a>
-              </li>
-              <li
-                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
-              >
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li
-                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
-              >
-                <a href="#contact">Kontak</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="w-full pt-8 border-t border-slate-700">
-          <p class="font-medium text-[0.6rem] text-slate-500 text-center lg:text-sm">
-            Dibuat dengan <span class="text-pink-500"> ❤️ </span>oleh
-            <a href="https://github.com/madep-dev" target="_blank" class="font-bold text-primary">
-              Mahfud Ade Purwanto
-            </a>
-            menggunakan
-            <a href="https://tailwindcss.com/" target="_blank" class="font-bold text-primary">
-              Tailwind CSS</a
-            >.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- end Footer -->
+        </section>
+        <!-- end Hero -->
 
-    <script src="dist/js/script.js"></script>
-    <script src="dist/js/vanilla-tilt.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
-    <script>
-      gsap.registerPlugin(TextPlugin, ScrollTrigger);
-    </script>
-    <!-- Script JS Pesan -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbz1u4yTDHLzhsV-1kgFrCdmO3VkkWw0Rou9r2TT_267MuQD9OcvPFWLEQa8Q1pBzVi4/exec";
-      const form = document.forms["madep-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
+        <!-- About -->
+        <section id="about" class="pt-36 pb-32">
+            <div class="container">
+                <h2
+                    class="font-bold text-2xl sm:text-3xl lg:text-5xl text-dark text-center uppercase mb-2 sm:mb-3 lg:mb-4"
+                >
+                    Tentang Saya
+                </h2>
+                <hr
+                    class="w-8 lg:w-16 h-1 lg:h-2 mb-8 mx-auto rounded bg-primary sm:mb-10 lg:mb-14"
+                />
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                        <div class="mb-8 lg:mb-10">
+                            <h2 class="font-semibold text-lg lg:mb-2 text-dark lg:text-2xl">
+                                Saya adalah ...
+                            </h2>
+                            <p
+                                class="font-medium text-sm text-secondary text-justify mb-5 max-w-xl lg:text-lg"
+                            >
+                                Saya adalah alumni dari Universitas Islam Sultan Agung Semarang
+                                jurusan Teknik Informatika. Memiliki keahlian dalam hardware dan
+                                software komputer. Berpengalaman dalam merancang, mengelola, dan
+                                memelihara infrastruktur IT. Serta memiliki keahlian dalam bidang
+                                programming web. Komunikatif, kolaboratif, bertanggung jawab dan
+                                selalu bersemangat untuk terus belajar. Siap untuk menghadapi
+                                tantangan dan memberikan solusi teknologi terbaik bagi perusahaan.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-lg lg:mb-2 text-dark lg:text-2xl">
+                                Kontak
+                            </h3>
+                            <p class="font-medium text-sm text-secondary mb-5 lg:text-lg">
+                                Temukan saya di sosial media populer.
+                            </p>
+                            <div class="flex items-center">
+                                <!-- Whatsapp -->
+                                <div class="wa">
+                                    <a
+                                        href="https://wa.me/6281333348747"
+                                        target="_blank"
+                                        class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:shadow-xl hover:shadow-[#25D366]/50 transition-all duration-300"
+                                    >
+                                        <svg
+                                            role="img"
+                                            width="30"
+                                            viewBox="0 0 24 24"
+                                            class="fill-current"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>WhatsApp</title>
+                                            <path
+                                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        btnLoading.classList.toggle("hidden");
-        btnKirim.classList.toggle("hidden");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("hidden");
-            btnKirim.classList.toggle("hidden");
-            myAlert.classList.toggle("hidden");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-    <!-- Script GSAP -->
-    <script>
-      gsap.to(".nama", {
-        duration: 2.5,
-        text: "Mahfud Ade Purwanto",
-        ease: "none",
-      });
-      gsap.to(".nama2", {
-        duration: 2.5,
-        text: "Web Programmer",
-        ease: "none",
-      });
-      gsap.from(".svg-image", {
-        scrollTrigger: ".svg-image",
-        duration: 2,
-        scale: 0,
-        ease: "elastic.out",
-      });
-      gsap.from(".image", {
-        scrollTrigger: ".image",
-        duration: 1.5,
-        opacity: 50,
-        x: 200,
-        ease: "expo.out",
-      });
-      gsap.from(".about", {
-        scrollTrigger: ".about",
-        duration: 1,
-        opacity: 0,
-        x: -150,
-        ease: "exp.out",
-      });
-      gsap.from(".progress", {
-        scrollTrigger: ".progress",
-        width: 0,
-        duration: 1.5,
-        ease: "expo.out",
-      });
-      gsap.from(".progress1", {
-        scrollTrigger: ".progress",
-        width: 0,
-        duration: 1.5,
-        ease: "expo.out",
-      });
-      gsap.from(".progress2", {
-        scrollTrigger: ".progress",
-        width: 0,
-        duration: 1.5,
-        ease: "expo.out",
-      });
-      gsap.from(".progress3", {
-        scrollTrigger: ".progress",
-        width: 0,
-        duration: 1.5,
-        ease: "expo.out",
-      });
-      gsap.from(".portfolio", {
-        scrollTrigger: ".portfolio",
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "expo.out",
-      });
-      gsap.from(".portfolio1", {
-        scrollTrigger: ".portfolio1",
-        delay: 0.3,
-        duration: 1.5,
-        opacity: 0,
-        x: -150,
-        ease: "expo",
-      });
-      gsap.from(".portfolio2", {
-        scrollTrigger: ".portfolio2",
-        delay: 0.3,
-        duration: 1.5,
-        opacity: 0,
-        x: 150,
-        ease: "expo",
-      });
-      gsap.from(".portfolio3", {
-        scrollTrigger: ".portfolio3",
-        delay: 0.3,
-        duration: 1.5,
-        opacity: 0,
-        x: -150,
-        ease: "expo",
-      });
-      gsap.from(".portfolio4", {
-        scrollTrigger: ".portfolio4",
-        delay: 0.3,
-        duration: 1.5,
-        opacity: 0,
-        x: 150,
-        ease: "expo",
-      });
-      gsap.from(".kontak", {
-        scrollTrigger: ".kontak",
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "back.out",
-      });
-      gsap.from(".kontak1", {
-        scrollTrigger: ".kontak1",
-        delay: 0.2,
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "back.out",
-      });
-      gsap.from(".kontak2", {
-        scrollTrigger: ".kontak1",
-        delay: 0.4,
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "back.out",
-      });
-      gsap.from(".kontak3", {
-        scrollTrigger: ".kontak1",
-        delay: 0.6,
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "back.out",
-      });
-      gsap.from(".kontak4", {
-        scrollTrigger: ".kontak1",
-        delay: 0.8,
-        duration: 0.7,
-        opacity: 0,
-        y: 150,
-        ease: "back.out",
-      });
-      gsap.from(".wa", {
-        scrollTrigger: ".wa",
-        delay: 0.2,
-        duration: 0.7,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-      });
-      gsap.from(".fb", {
-        scrollTrigger: ".fb",
-        delay: 0.4,
-        duration: 0.7,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-      });
-      gsap.from(".ig", {
-        scrollTrigger: ".ig",
-        delay: 0.6,
-        duration: 0.7,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-      });
-      gsap.from(".link", {
-        scrollTrigger: ".link",
-        delay: 0.8,
-        duration: 0.7,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-      });
-      gsap.from(".git", {
-        scrollTrigger: ".git",
-        delay: 1,
-        duration: 0.7,
-        opacity: 0,
-        y: 50,
-        ease: "back.out",
-      });
-    </script>
-    <!-- Script TiltJS -->
-    <script>
-      VanillaTilt.init(document.querySelector(".asmaralaya"), {
-        max: 10,
-        speed: 100,
-        scale: 1.05,
-        glare: true,
-        "max-glare": 0.7,
-      });
-      VanillaTilt.init(document.querySelector(".gsc"), {
-        max: 10,
-        speed: 100,
-        scale: 1.05,
-        glare: true,
-        "max-glare": 0.7,
-      });
-      VanillaTilt.init(document.querySelector(".mkm"), {
-        max: 10,
-        speed: 100,
-        scale: 1.05,
-        glare: true,
-        "max-glare": 0.7,
-      });
-      VanillaTilt.init(document.querySelector(".ganool"), {
-        max: 10,
-        speed: 100,
-        scale: 1.05,
-        glare: true,
-        "max-glare": 0.7,
-      });
-    </script>
-  </body>
+                                <!-- Facebook -->
+                                <div class="fb">
+                                    <a
+                                        href="https://web.facebook.com/madep.dev"
+                                        target="_blank"
+                                        class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:shadow-xl hover:shadow-[#1877F2]/50 transition-all duration-300"
+                                    >
+                                        <svg
+                                            role="img"
+                                            width="30"
+                                            class="fill-current"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>Facebook</title>
+                                            <path
+                                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <!-- Instagram -->
+                                <div class="ig">
+                                    <a
+                                        href="https://www.instagram.com/adde.nvr/"
+                                        target="_blank"
+                                        class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:shadow-xl hover:shadow-pink-500/50 transition-all duration-300"
+                                    >
+                                        <svg
+                                            role="img"
+                                            width="30"
+                                            class="fill-current"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>Instagram</title>
+                                            <path
+                                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <!-- Linkedin -->
+                                <div class="link">
+                                    <a
+                                        href="https://www.linkedin.com/in/mahfud-ade-purwanto-7609a7191/"
+                                        target="_blank"
+                                        class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:shadow-xl hover:shadow-[#0A66C2]/50 transition-all duration-300"
+                                    >
+                                        <svg
+                                            role="img"
+                                            width="30"
+                                            class="fill-current"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>LinkedIn</title>
+                                            <path
+                                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <!-- Github -->
+                                <div class="git">
+                                    <a
+                                        href="https://github.com/madep-dev"
+                                        target="_blank"
+                                        class="w-[50px] h-[50px] mr-3 rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#181717] hover:text-white hover:shadow-xl hover:shadow-[#181717]/50 transition-all duration-300"
+                                    >
+                                        <svg
+                                            role="img"
+                                            width="30"
+                                            class="fill-current"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <title>GitHub</title>
+                                            <path
+                                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                        <div class="mb-10 lg:mb-16">
+                            <h2 class="font-bold text-lg mb-2 lg:mb-6 text-dark lg:text-2xl">
+                                Keahlian Saya
+                            </h2>
+                            <div class="mb-5 lg:mb-8">
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    HTML
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    CSS
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    JavaScript
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    GIT
+                                </span>
+                            </div>
+                            <div class="mb-5 lg:mb-8">
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    Responsive Design
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    PHP
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    SQL
+                                </span>
+                            </div>
+                            <div>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    Windows
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    Hardware
+                                </span>
+                                <span
+                                    class="bg-slate-200 text-secondary text-xs lg:text-lg font-semibold mr-4 px-4 lg:px-6 py-2 lg:py-3 rounded"
+                                >
+                                    Software
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mb-10 lg:mb-20">
+                            <h2 class="font-bold text-lg lg:mb-2 text-dark lg:text-2xl">
+                                Tools dan Framework
+                            </h2>
+                            <p class="font-medium text-sm text-secondary mb-3 lg:text-lg">
+                                Tools dan Framework yang saya pakai untuk membuat dan mengembangkan
+                                project.
+                            </p>
+                            <div class="flex justify-between">
+                                <div>
+                                    <svg
+                                        role="img"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#007ACC] w-10 lg:w-16"
+                                    >
+                                        <title>Visual Studio Code</title>
+                                        <path
+                                            d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg
+                                        role="img"
+                                        width="30"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#181717] w-10 lg:w-16"
+                                    >
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg
+                                        role="img"
+                                        width="60"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#EF4223] w-10 lg:w-16"
+                                    >
+                                        <title>CodeIgniter</title>
+                                        <path
+                                            d="M11.466 0c.88 1.423-.28 3.306-1.207 4.358-.899 1.02-1.992 1.873-2.985 2.8-1.066.996-2.091 2.044-2.967 3.213-1.753 2.339-2.827 5.28-2.038 8.199.788 2.916 3.314 4.772 6.167 5.429-1.44-.622-2.786-2.203-2.79-3.82-.003-1.765 1.115-3.262 2.505-4.246-.167.632-.258 1.21.155 1.774a1.68 1.68 0 0 0 1.696.642c1.487-.326 1.556-1.96.674-2.914-.872-.943-1.715-2.009-1.384-3.377.167-.685.588-1.328 1.121-1.787-.41 1.078.755 2.14 1.523 2.67 1.332.918 2.793 1.612 4.017 2.688 1.288 1.132 2.24 2.661 2.047 4.435-.208 1.923-1.736 3.26-3.45 3.936 3.622-.8 7.365-3.61 7.44-7.627.093-3.032-1.903-5.717-5.158-7.384.19.48.074.697-.058.924-.55.944-2.082 1.152-2.835.184-1.205-1.548.025-3.216.197-4.855.215-2.055-1.073-4.049-2.67-5.242z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg
+                                        role="img"
+                                        width="60"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#FF2D20] w-10 lg:w-16"
+                                    >
+                                        <title>Laravel</title>
+                                        <path
+                                            d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 01-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81L1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505l2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95l-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978L16.21 7.087 14.63 6.18v4.283l2.182 1.256 1.58.908zm-8.65 9.654l5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg
+                                        role="img"
+                                        width="60"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#7952B3] w-10 lg:w-16"
+                                    >
+                                        <title>Bootstrap</title>
+                                        <path
+                                            d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <svg
+                                        role="img"
+                                        width="60"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="fill-[#06B6D4] w-10 lg:w-16"
+                                    >
+                                        <title>Tailwind CSS</title>
+                                        <path
+                                            d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end About -->
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+            <div class="container">
+                <h2
+                    class="font-bold text-2xl sm:text-3xl lg:text-5xl text-dark text-center uppercase mb-2 sm:mb-3 lg:mb-4"
+                >
+                    Project
+                </h2>
+                <hr
+                    class="w-8 lg:w-16 h-1 lg:h-2 mb-8 mx-auto rounded bg-primary sm:mb-10 lg:mb-14"
+                />
+                <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                    <div class="mb-12 p-4 md:w-1/2 portfolio1">
+                        <div class="rounded-md shadow-md overflow-hidden asmaralaya">
+                            <img
+                                src="dist/img/portfolio/asmaralaya.avif"
+                                alt="Asmaralaya"
+                                width="w-full"
+                            />
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
+                            Kedai Kopi Asmaralaya
+                        </h3>
+                        <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
+                            Website Kedai Kopi Asmaralaya yang dibuat dengan TailwindCSS dan
+                            Javascript.
+                        </p>
+                        <a
+                            href="https://madep-dev.github.io/asmaralaya/"
+                            target="_blank"
+                            class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
+                        >
+                            Kunjungi Website
+                        </a>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2 portfolio2">
+                        <div class="rounded-md shadow-md overflow-hidden gsc">
+                            <img src="dist/img/portfolio/gsc.avif" alt="GSC" width="w-full" />
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
+                            Company Profile PT Gosyen Solusindo Cemerlang
+                        </h3>
+                        <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
+                            Website Company Profile PT Gosyen Solusindo Cemerlang yang dibuat dengan
+                            HTML, Bootstrap 5 dan Javascript.
+                        </p>
+                        <a
+                            href="https://gosyensc.netlify.app/"
+                            target="_blank"
+                            class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
+                        >
+                            Kunjungi Website
+                        </a>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2 portfolio3">
+                        <div class="rounded-md shadow-md overflow-hidden mkm">
+                            <img src="dist/img/portfolio/mkm.avif" alt="MKM" width="w-full" />
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
+                            Landing Page SMK Mitra Karya Mandiri Ketanggungan
+                        </h3>
+                        <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
+                            Website Landing Page SMK Mitra Karya Mandiri Ketanggungan yang dibuat
+                            denagn HTML 5 dan Material Design Bootstrap
+                        </p>
+                        <a
+                            href="https://madep-dev.github.io/smkmkm/"
+                            target="_blank"
+                            class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
+                        >
+                            Kunjungi Website
+                        </a>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2 portfolio4">
+                        <div class="rounded-md shadow-md overflow-hidden ganool">
+                            <img
+                                src="dist/img/portfolio/ganool.avif"
+                                alt="Ganool Movies"
+                                width="w-full"
+                            />
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-5 mb-3 lg:text-xl">
+                            Ganool Movies - Tempat Nonton Film Terbaru
+                        </h3>
+                        <p class="font-medium text-sm text-secondary mb-5 lg:text-base">
+                            Website untuk menonton film terbaru. Dibuat dengan ReactJS dan
+                            Bootstrap.
+                        </p>
+                        <a
+                            href="https://ganoolmovies.netlify.app/"
+                            target="_blank"
+                            class="text-xs font-medium text-white bg-gradient-to-r from-sky-400 to-primary px-4 py-3 rounded-md hover:bg-gradient-to-l hover:from-sky-400 hover:to-primary hover:shadow-xl lg:text-base lg:px-6 lg:py-3"
+                        >
+                            Kunjungi Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Portfolio -->
+
+        <!-- Concact -->
+        <section id="contact">
+            <div class="pt-36 pb-32">
+                <div class="container">
+                    <div class="w-full px-4">
+                        <div class="w-full mx-auto text-center mb-16 kontak">
+                            <h2
+                                class="font-bold text-2xl sm:text-3xl lg:text-5xl text-dark text-center uppercase mb-2 sm:mb-3 lg:mb-4"
+                            >
+                                Kontak
+                            </h2>
+                            <hr
+                                class="w-8 lg:w-16 h-1 lg:h-2 mb-8 mx-auto rounded bg-primary sm:mb-10 lg:mb-14"
+                            />
+                        </div>
+                    </div>
+                    <div class="px-4">
+                        <p
+                            class="text-secondary text-sm lg:text-lg text-center mx-auto mb-3 lg:mb-5 lg:w-2/3"
+                        >
+                            Jangan ragu untuk menghubungi saya dengan mengirimkan formulir di bawah
+                            ini, dan saya akan menghubungi Anda sesegera mungkin.
+                        </p>
+                    </div>
+                    <form name="madep-contact-form">
+                        <div class="w-full lg:w-2/3 lg:mx-auto">
+                            <div class="w-full px-4 mb-8">
+                                <div
+                                    class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500 my-alert hidden"
+                                >
+                                    <span class="inline-block align-middle mr-8 text-sm lg:text-lg">
+                                        <b class="capitalize">Terima kasih.</b>
+                                    </span>
+                                    <p class="text-sm lg:text-lg">Pesan Anda sudah diterima.</p>
+                                    <button
+                                        class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none"
+                                        onclick="closeAlert(event)"
+                                    >
+                                        <span>×</span>
+                                    </button>
+                                </div>
+                                <script>
+                                    function closeAlert(event) {
+                                        let element = event.target;
+                                        while (element.nodeName !== "BUTTON") {
+                                            element = element.parentNode;
+                                        }
+                                        element.parentNode.parentNode.removeChild(
+                                            element.parentNode
+                                        );
+                                    }
+                                </script>
+                            </div>
+                            <div class="w-full px-4 mb-8 kontak1">
+                                <label
+                                    for="name"
+                                    class="font-bold text-sm text-primary lg:text-base"
+                                >
+                                    Nama
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="nama"
+                                    class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary"
+                                    required
+                                    placeholder="Masukan Nama Anda"
+                                />
+                            </div>
+                            <div class="w-full px-4 mb-8 kontak2">
+                                <label
+                                    for="email"
+                                    class="font-bold text-sm text-primary lg:text-base"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary"
+                                    required
+                                    placeholder="Masukan Email Anda"
+                                />
+                            </div>
+                            <div class="w-full px-4 mb-8 kontak3">
+                                <label
+                                    for="message"
+                                    class="font-bold text-sm text-primary lg:text-base"
+                                    >Pesan</label
+                                >
+                                <textarea
+                                    type="text-area"
+                                    id="email"
+                                    name="pesan"
+                                    class="w-full bg-slate-200 text-dark p-3 mt-1 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary hover:ring-1 hover:ring-primary h-32"
+                                    required
+                                    placeholder="Masukan Pesan Anda"
+                                ></textarea>
+                            </div>
+                            <div class="w-full px-4 mb-4 kontak4">
+                                <button
+                                    type="submit"
+                                    class="w-full text-sm font-semibold text-white bg-blue-500 py-3 rounded-md hover:bg-primary hover:shadow-xl hover:shadow-primary/50 btn-kirim lg:text-base"
+                                >
+                                    Kirim
+                                </button>
+                            </div>
+                            <div class="w-full px-4 mb-4 kontak4">
+                                <button
+                                    type="submit"
+                                    class="w-full text-sm font-semibold text-white bg-blue-500 py-3 rounded-md hover:bg-primary hover:shadow-xl hover:shadow-primary/50 btn-loading hidden lg:text-base"
+                                >
+                                    <svg
+                                        role="status"
+                                        class="inline mr-3 w-4 h-4 text-white animate-spin"
+                                        viewBox="0 0 100 101"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="#E5E7EB"
+                                        />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    Mengirim ...
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end Contact -->
+
+        <!-- Footer -->
+        <section class="bg-dark pt-20 pb-12">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-10 md:mb-6 md:w-1/2">
+                        <div class="flex justify-evenly md:justify-start">
+                            <!-- Whatsapp -->
+                            <a
+                                href="https://wa.me/6281333348747"
+                                target="_blank"
+                                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#25D366] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    viewBox="0 0 24 24"
+                                    class="fill-current"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>WhatsApp</title>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a
+                                href="https://web.facebook.com/madep.dev"
+                                target="_blank"
+                                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-[#1877F2] hover:border-none hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Facebook</title>
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a
+                                href="https://www.instagram.com/adde.nvr/"
+                                target="_blank"
+                                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:bg-gradient-to-tr hover:from-yellow-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-none hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Linkedin -->
+                            <a
+                                href="https://www.linkedin.com/in/mahfud-ade-purwanto-7609a7191/"
+                                target="_blank"
+                                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-[#0A66C2] hover:text-white hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>LinkedIn</title>
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                    />
+                                </svg>
+                            </a>
+
+                            <!-- Github -->
+                            <a
+                                href="https://github.com/madep-dev"
+                                target="_blank"
+                                class="w-[40px] h-[40px] rounded-full flex justify-center items-center text-slate-400 border border-slate-400 hover:border-none hover:bg-white hover:text-[#181717] hover:scale-[1.2] hover:shadow-xl transition duration-300 lg:mx-3"
+                            >
+                                <svg
+                                    role="img"
+                                    width="20"
+                                    class="fill-current"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex w-full px-4 mb-6 md:w-1/2 md:items-center">
+                        <ul class="w-full inline-flex justify-center md:justify-end">
+                            <li
+                                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+                            >
+                                <a href="#home"> Beranda </a>
+                            </li>
+                            <li
+                                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+                            >
+                                <a href="#about">Tentang Saya</a>
+                            </li>
+                            <li
+                                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+                            >
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li
+                                class="text-xs text-slate-300 px-2 hover:text-primary lg:text-base lg:px-2 lg:mx-2"
+                            >
+                                <a href="#contact">Kontak</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full pt-8 border-t border-slate-700">
+                    <p class="font-medium text-[0.6rem] text-slate-500 text-center lg:text-sm">
+                        Dibuat dengan <span class="text-pink-500"> ❤️ </span>oleh
+                        <a
+                            href="https://github.com/madep-dev"
+                            target="_blank"
+                            class="font-bold text-primary"
+                        >
+                            Mahfud Ade Purwanto
+                        </a>
+                        menggunakan
+                        <a
+                            href="https://tailwindcss.com/"
+                            target="_blank"
+                            class="font-bold text-primary"
+                        >
+                            Tailwind CSS</a
+                        >.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end Footer -->
+
+        <canvas class="background"></canvas>
+        <script src="dist/js/script.js"></script>
+        <script src="dist/js/particles.min.js"></script>
+        <script src="dist/js/vanilla-tilt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+        <script>
+            gsap.registerPlugin(TextPlugin, ScrollTrigger);
+        </script>
+        <!-- Script JS Pesan -->
+        <script>
+            const scriptURL =
+                "https://script.google.com/macros/s/AKfycbz1u4yTDHLzhsV-1kgFrCdmO3VkkWw0Rou9r2TT_267MuQD9OcvPFWLEQa8Q1pBzVi4/exec";
+            const form = document.forms["madep-contact-form"];
+            const btnKirim = document.querySelector(".btn-kirim");
+            const btnLoading = document.querySelector(".btn-loading");
+            const myAlert = document.querySelector(".my-alert");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                btnLoading.classList.toggle("hidden");
+                btnKirim.classList.toggle("hidden");
+                fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then((response) => {
+                        btnLoading.classList.toggle("hidden");
+                        btnKirim.classList.toggle("hidden");
+                        myAlert.classList.toggle("hidden");
+                        form.reset();
+                        console.log("Success!", response);
+                    })
+                    .catch((error) => console.error("Error!", error.message));
+            });
+        </script>
+        <!-- Script GSAP -->
+        <script>
+            gsap.from(".about", {
+                scrollTrigger: ".about",
+                duration: 1,
+                opacity: 0,
+                x: -150,
+                ease: "exp.out",
+            });
+            gsap.from(".progress", {
+                scrollTrigger: ".progress",
+                width: 0,
+                duration: 1.5,
+                ease: "expo.out",
+            });
+            gsap.from(".progress1", {
+                scrollTrigger: ".progress",
+                width: 0,
+                duration: 1.5,
+                ease: "expo.out",
+            });
+            gsap.from(".progress2", {
+                scrollTrigger: ".progress",
+                width: 0,
+                duration: 1.5,
+                ease: "expo.out",
+            });
+            gsap.from(".progress3", {
+                scrollTrigger: ".progress",
+                width: 0,
+                duration: 1.5,
+                ease: "expo.out",
+            });
+            gsap.from(".portfolio", {
+                scrollTrigger: ".portfolio",
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "expo.out",
+            });
+            gsap.from(".portfolio1", {
+                scrollTrigger: ".portfolio1",
+                delay: 0.3,
+                duration: 1.5,
+                opacity: 0,
+                x: -150,
+                ease: "expo",
+            });
+            gsap.from(".portfolio2", {
+                scrollTrigger: ".portfolio2",
+                delay: 0.3,
+                duration: 1.5,
+                opacity: 0,
+                x: 150,
+                ease: "expo",
+            });
+            gsap.from(".portfolio3", {
+                scrollTrigger: ".portfolio3",
+                delay: 0.3,
+                duration: 1.5,
+                opacity: 0,
+                x: -150,
+                ease: "expo",
+            });
+            gsap.from(".portfolio4", {
+                scrollTrigger: ".portfolio4",
+                delay: 0.3,
+                duration: 1.5,
+                opacity: 0,
+                x: 150,
+                ease: "expo",
+            });
+            gsap.from(".kontak", {
+                scrollTrigger: ".kontak",
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "back.out",
+            });
+            gsap.from(".kontak1", {
+                scrollTrigger: ".kontak1",
+                delay: 0.2,
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "back.out",
+            });
+            gsap.from(".kontak2", {
+                scrollTrigger: ".kontak1",
+                delay: 0.4,
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "back.out",
+            });
+            gsap.from(".kontak3", {
+                scrollTrigger: ".kontak1",
+                delay: 0.6,
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "back.out",
+            });
+            gsap.from(".kontak4", {
+                scrollTrigger: ".kontak1",
+                delay: 0.8,
+                duration: 0.7,
+                opacity: 0,
+                y: 150,
+                ease: "back.out",
+            });
+            gsap.from(".wa", {
+                scrollTrigger: ".wa",
+                delay: 0.2,
+                duration: 0.7,
+                opacity: 0,
+                y: 50,
+                ease: "back.out",
+            });
+            gsap.from(".fb", {
+                scrollTrigger: ".fb",
+                delay: 0.4,
+                duration: 0.7,
+                opacity: 0,
+                y: 50,
+                ease: "back.out",
+            });
+            gsap.from(".ig", {
+                scrollTrigger: ".ig",
+                delay: 0.6,
+                duration: 0.7,
+                opacity: 0,
+                y: 50,
+                ease: "back.out",
+            });
+            gsap.from(".link", {
+                scrollTrigger: ".link",
+                delay: 0.8,
+                duration: 0.7,
+                opacity: 0,
+                y: 50,
+                ease: "back.out",
+            });
+            gsap.from(".git", {
+                scrollTrigger: ".git",
+                delay: 1,
+                duration: 0.7,
+                opacity: 0,
+                y: 50,
+                ease: "back.out",
+            });
+        </script>
+        <!-- Script TiltJS -->
+        <script>
+            VanillaTilt.init(document.querySelector(".asmaralaya"), {
+                max: 10,
+                speed: 100,
+                scale: 1.05,
+                glare: true,
+                "max-glare": 0.7,
+            });
+            VanillaTilt.init(document.querySelector(".gsc"), {
+                max: 10,
+                speed: 100,
+                scale: 1.05,
+                glare: true,
+                "max-glare": 0.7,
+            });
+            VanillaTilt.init(document.querySelector(".mkm"), {
+                max: 10,
+                speed: 100,
+                scale: 1.05,
+                glare: true,
+                "max-glare": 0.7,
+            });
+            VanillaTilt.init(document.querySelector(".ganool"), {
+                max: 10,
+                speed: 100,
+                scale: 1.05,
+                glare: true,
+                "max-glare": 0.7,
+            });
+        </script>
+    </body>
 </html>
