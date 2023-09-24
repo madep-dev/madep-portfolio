@@ -1,4 +1,4 @@
-// Particle js
+// Particle JS
 window.onload = function () {
     Particles.init({
         selector: ".background",
