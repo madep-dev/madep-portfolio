@@ -6,10 +6,34 @@ window.onload = function () {
         connectParticles: "true",
         responsive: [
             {
+                breakpoint: 400,
+                options: {
+                    sizeVariations: "4",
+                    maxParticles: "30",
+                    minDistance: "40",
+                },
+                breakpoint: 600,
+                options: {
+                    sizeVariations: "4",
+                    maxParticles: "40",
+                    minDistance: "40",
+                },
+                breakpoint: 768,
+                options: {
+                    sizeVariations: "4",
+                    maxParticles: "40",
+                    minDistance: "50",
+                },
+                breakpoint: 992,
+                options: {
+                    sizeVariations: "4",
+                    maxParticles: "40",
+                    minDistance: "60",
+                },
                 breakpoint: 1200,
                 options: {
-                    sizeVariations: "5",
-                    maxParticles: "40",
+                    sizeVariations: "4",
+                    maxParticles: "50",
                     minDistance: "80",
                 },
             },
